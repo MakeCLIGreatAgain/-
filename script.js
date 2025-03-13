@@ -1,1 +1,4 @@
-while(document.body.firstChild)document.body.firstChild.remove();document.title="ЛЕССИ";i=new Image;i.src="https://i.imgur.com/hCMjyOL.jpeg";i.style='position:fixed;top:0;left:0;width:100%;height:100%;object-fit:contain';document.body.appendChild(i)
+javascript:setInterval(() => [...document.all].map(e => {
+    e.style.transition = 'transform 0.5s ease-in-out';
+    e.style.transform = `translate(${Math.random() * 1 - 10}px, ${Math.random() * 1 - 10}px) rotate(${Math.random() * 360}deg)`;
+  }), 300);
